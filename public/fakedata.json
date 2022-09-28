@@ -1,0 +1,74 @@
+[
+  {
+    "id": "6334835fc3e38c94f52ab2c7",
+    "picture": "https://homefitnessedge.com/wp-content/uploads/2017/08/Are-Spin-Bikes-Good-For-Weight-Loss.jpg",
+    "name": "Stationary Bike",
+    "description": "Riding a stationary exercise bike is an efficient and effective way to burn calories and body fat while strengthening your heart, lungs, and muscles.",
+    "age": "20 - 45",
+    "time": 30
+  },
+  {
+    "id": "6334835fcdb161c34f00e6da",
+    "picture": "https://media1.popsugar-assets.com/files/thumbor/M2zuMtY-16E38tqu-7H-_Fh_xUE/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2019/06/25/722/n/1922729/a3635cce5d1249ded819c3.29533515_/i/Where-Should-My-Hands-Push-Ups.jpg",
+    "name": "Push Up",
+    "description": "Push-ups may seem like a basic exercise that works only your upper arms and chest, but when you do them the right way, they use muscles all over your body.",
+    "age": "15 - 40",
+    "time": 1
+  },
+  {
+    "id": "6334835f446f2f59e9849f20",
+    "picture": "https://www.shape.com/thmb/39eODuxr_eYOJyaFgUDOLpoGeRE=/743x418/smart/filters:no_upscale():focal(399x0:401x2)/1200-woman-lifting-heavy-weights-1ee44494a1ca4f00b4ad272360efda81.jpg",
+    "name": "Lifting Barbel",
+    "description": "Barbell exercises are weight-training exercises that involve lifting heavy weights loaded onto a barbell. The weight is delivered by weight plates, which come in increments.",
+    "age": "25 - 40",
+    "time": 10
+  },
+  {
+    "id": "6334835f68001a1ee141a8ca",
+    "picture": "https://manofmany.com/wp-content/uploads/2020/07/Best-Dumbbell-Exercises-For-Men.jpg",
+    "name": "Dumbbell",
+    "description": "Dumbbells can provide the two types of overload that lead to muscle growth: mechanic and metabolic. Mechanic overload is the result of damaged caused by muscle.",
+    "age": "15 - 40",
+    "time": 10
+  },
+  {
+    "id": "6334835f0719384f7ef6027e",
+    "picture": "https://dailyburn.com/life/wp-content/uploads/2015/10/Foam-Rolling-Legs_AO_2.jpg",
+    "name": "Foam Rolling",
+    "description": "Foam rolling tight muscles may be somewhat uncomfortable, but it’s also one of those “hurts so good” kinds of discomforts, which is why many athletes have a love-hate relationship with their foam roller. ",
+    "age": "20 - 40",
+    "time": 15
+  },
+  {
+    "id": "6334835f25876a04b3209b00",
+    "picture": "https://t4.ftcdn.net/jpg/02/99/37/63/360_F_299376349_3LaaJQxmW5pTGAO6VtSFOA3L20GjiMYb.jpg",
+    "name": "Yoga",
+    "description": "“The purpose of yoga is to build strength, awareness and harmony in both the mind and body,” explains Natalie Nevins, DO, a board-certified osteopathic family physician and certified Kundalini Yoga instructor in Hollywood, California.",
+    "age": "15 - 40",
+    "time": 30
+  },
+  {
+    "id": "6334835fddda61855afac297",
+    "picture": "https://image.made-in-china.com/155f0j00wQSGNfacJDgP/Temperable-Glass-Mirrors-Gym-Home-Mirrors-Dance-Studio-Mirrors.jpg",
+    "name": "Dancing Near Mirror",
+    "description": "Working out in front of a mirror may seem like nothing more than a passing fitness fad or even an exercise in vanity, but the truth is that mirrors have been a mainstay in dance studios and gyms for decades — and for good reason.",
+    "age": "15 - 35",
+    "time": 20
+  },
+  {
+    "id": "6334835fc481d8115a2707cd",
+    "picture": "https://post.healthline.com/wp-content/uploads/2020/07/7040-hispanic_female_exercise-732x549-thumbnail-732x549.jpg",
+    "name": "Ball Workout",
+    "description": "As an introduction to exercising on the ball, it is often recommended that one simply sit on one for 30 minutes a day and bounce lightly, continually finding and maintaining balance on the ball.",
+    "age": "10 - 30",
+    "time": 20
+  },
+ {
+    "id": "6334835fc481d8115a1234cd",
+    "picture": "https://yakimaathletic.com/wp-content/uploads/2020/03/50854341-man-practicing-weightlifting-i.jpg",
+    "name": "Weight Lifting",
+    "description": "Weight lifting brings more benefits than just stronger muscles and a toned body. Adding strength training to your workouts is a great way to improve your overall fitness, from burning body fat and strengthening your bones to preventing injury and making your heart healthier.",
+    "age": "20 - 40",
+    "time": 10
+  }
+]
