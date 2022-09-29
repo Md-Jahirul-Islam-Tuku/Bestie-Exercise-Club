@@ -1,9 +1,11 @@
 import React from 'react';
+import blog from '../../blog.png'
 
 const Blog = () => {
    return (
       <div className='mx-7 w-[90%] lg:w-[96%] xl:w-[98%]'>
-         <h1 className='text-3xl my-3'>My Blog</h1>
+         {/* <h1 className='font-bold italic text-4xl my-3 mr-96'>My Blog</h1> */}
+         <img className='lg:mt-10 mx-auto lg:ml-96 lg:pl-64' src={blog} alt="" />
          <div tabIndex={0} className="mt-5 lg:w-[73%] collapse collapse-arrow border border-base-300 bg-zinc-800 rounded-box">
             <div className="collapse-title text-3xl font-medium text-yellow-300">
                What is React.js and how does it work?
