@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import image from '../../Profile Photo.png';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2'
 
@@ -28,16 +28,11 @@ const Sidebar = ({ exerciseTime }) => {
    }
    const notify = () => {
       toast("Wow so easy !");
-      // Swal.fire(
-      //    'Congratulations !',
-      //    'You are done with your activity !',
-      //    'success'
-      // )
       Swal.fire({
          title: 'Congratulations !',
          text: 'You are done with your activity !',
          imageUrl: 'https://scontent.fdac27-2.fna.fbcdn.net/v/t39.30808-6/288676971_106295258788119_5518577303932797875_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dCSipwQzc30AX9xftQh&_nc_ht=scontent.fdac27-2.fna&oh=00_AT8jqyRt5bYGH2LREo8Z7L8Fy2P8IwtG8hupW1CD3l1lZQ&oe=633A147F',
-         imageWidth: 400,
+         imageWidth: 420,
          imageHeight: 400,
          imageAlt: 'Custom image',
       })
