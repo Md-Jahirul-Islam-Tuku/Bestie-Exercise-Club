@@ -28,11 +28,19 @@ const Sidebar = ({ exerciseTime }) => {
    }
    const notify = () => {
       toast("Wow so easy !");
-      Swal.fire(
-         'Congratulations !',
-         'You are done with your activity !',
-         'success'
-      )
+      // Swal.fire(
+      //    'Congratulations !',
+      //    'You are done with your activity !',
+      //    'success'
+      // )
+      Swal.fire({
+         title: 'Congratulations !',
+         text: 'You are done with your activity !',
+         imageUrl: 'https://scontent.fdac27-2.fna.fbcdn.net/v/t39.30808-6/288676971_106295258788119_5518577303932797875_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dCSipwQzc30AX9xftQh&_nc_ht=scontent.fdac27-2.fna&oh=00_AT8jqyRt5bYGH2LREo8Z7L8Fy2P8IwtG8hupW1CD3l1lZQ&oe=633A147F',
+         imageWidth: 400,
+         imageHeight: 400,
+         imageAlt: 'Custom image',
+      })
    }
    return (
       <div className='border border-gray-500 bg-zinc-800 rounded-xl mx-8 lg:mx-0 lg:h-screen p-5 lg:fixed top-0 lg:min-w-[23%] md:min-w-full my-5 lg:mt-0'>
