@@ -28,6 +28,7 @@ const Home = () => {
                      key={activity.id}
                      activity={activity}
                      addExerciseTime={addExerciseTime}
+                     exerciseTime={exerciseTime}
                   ></Activity>)
                }
             </div>
