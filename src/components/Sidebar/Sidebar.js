@@ -37,10 +37,12 @@ const Sidebar = ({ exerciseTime }) => {
    return (
       <div className='border border-gray-500 bg-zinc-800 rounded-xl mx-8 lg:mx-0 lg:h-screen p-5 lg:fixed top-0 lg:min-w-[23%] md:min-w-full my-5 lg:mt-0'>
          <div className='flex'>
-            <div>
-               <img className='h-14 mr-4 rounded-full border border-gray-500' src={image} alt="" />
+            <div className="avatar online">
+               <div className="w-14 rounded-full ring ring-info ring-offset-base-100 ring-offset-1">
+                  <img src={image} alt="Tuku" />
+               </div>
             </div>
-            <div className='text-white'>
+            <div className='text-white ml-5'>
                <h4 className='text-xl font-bold text-orange-400'>Jahirul Islam Tuku</h4>
                <p><FontAwesomeIcon className='mr-1' icon={faLocationDot}></FontAwesomeIcon> Barishal, Bangladesh</p>
             </div>
