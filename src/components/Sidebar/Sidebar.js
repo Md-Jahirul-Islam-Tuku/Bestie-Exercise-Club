@@ -1,14 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
-import image from '../../Profile Photo.png'
+import image from '../../Profile Photo.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2'
+
 const Sidebar = ({ exerciseTime }) => {
+
    const [breakTime, setBreakTime] = useState();
    useEffect(() => {
       const breakTime = getStoredBreakTime();
       setBreakTime(breakTime);
    }, []);
-   const handleBreakTimeSet = (props) =>{
+   const handleBreakTimeSet = (props) => {
       localStorage.setItem('break-time', JSON.stringify(props));
       getStoredBreakTime();
    };
@@ -21,7 +26,14 @@ const Sidebar = ({ exerciseTime }) => {
       setBreakTime(breakTime);
       return breakTime;
    }
-   
+   const notify = () => {
+      toast("Wow so easy !");
+      Swal.fire(
+         'Congratulations !',
+         'You are done with your activity !',
+         'success'
+      )
+   }
    return (
       <div className='border border-gray-500 bg-zinc-800 rounded-xl mx-8 lg:mr-5 lg:h-screen p-5 lg:fixed top-0 lg:min-w-[23%] md:min-w-full my-5 lg:mt-0'>
          <div className='flex'>
@@ -48,7 +60,7 @@ const Sidebar = ({ exerciseTime }) => {
             </div>
          </div>
          <h1 className='text-2xl font-bold text-left'>Add a Break</h1>
-         <div className='text-yellow-300 flex justify-around my-5 bg-slate-600 h-24 py-5 rounded-xl'>
+         <div className='text-yellow-300 flex justify-around my-5 px-2 bg-slate-600 h-24 py-5 rounded-xl'>
             <button onClick={() => handleBreakTimeSet(2)} className='bg-slate-500 p-2 rounded-full'><span className='text-2xl font-semibold'>2</span>min</button>
             <button onClick={() => handleBreakTimeSet(3)} className='bg-slate-500 p-2 rounded-full'><span className='text-2xl font-semibold'>3</span>min</button>
             <button onClick={() => handleBreakTimeSet(5)} className='bg-slate-500 p-2 rounded-full'><span className='text-2xl font-semibold'>5</span>min</button>
@@ -64,7 +76,7 @@ const Sidebar = ({ exerciseTime }) => {
             <h1 className='text-xl font-semibold'><span>Break Time</span></h1>
             <p className='text-orange-400 text-2xl'>{breakTime} minutes</p>
          </div>
-         <button className='text-white w-full text-3xl flex justify-around my-5 bg-green-700 h-18 py-5 rounded-xl'>Activity Completed</button>
+         <button onClick={notify} className='text-white w-full text-3xl flex justify-around my-5 btn-info h-18 py-5 rounded-xl'>Activity Completed</button>
       </div>
    );
 };

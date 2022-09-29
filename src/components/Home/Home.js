@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
+import Blog from '../Blog/Blog';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 
@@ -38,6 +39,7 @@ const Home = () => {
                ></Sidebar>
             </div>
          </div>
+         <Blog></Blog>
       </div>
    );
 };
