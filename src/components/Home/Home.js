@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Header from '../Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Home = () => {
    const [activities, setActivities] = useState([]);
    useEffect(() => {
-     fetch('fakedata.json')
+     fetch('fakeData.json')
      .then(res => res.json())
      .then(data => setActivities(data))
    }, []);
    return (
-      <div>
+      <div className='sm:px-2 md:px-5 lg:px-20'>
          <Header></Header>
-         <div className='grid grid-cols-3 gap-5 px-8'>
-            {
-               activities.map(activity => <Activity
-                  activity={activity}
-               ></Activity>)
-            }
+         <h1 className='text-left text-3xl text-white pl-8 py-5'>Select Today's Activity</h1>
+         <div className='grid md:grid-cols-2 lg:grid-cols-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-8 md:col-span-2 lg:col-span-3'>
+               {
+                  activities.map(activity => <Activity
+                     activity={activity}
+                  ></Activity>)
+               }
+            </div>
+            <div>
+               <Sidebar></Sidebar>
+            </div>
          </div>
       </div>
    );
