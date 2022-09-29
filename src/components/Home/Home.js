@@ -18,6 +18,7 @@ const Home = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-8 md:col-span-2 lg:col-span-3'>
                {
                   activities.map(activity => <Activity
+                     key={activity.id}
                      activity={activity}
                   ></Activity>)
                }
