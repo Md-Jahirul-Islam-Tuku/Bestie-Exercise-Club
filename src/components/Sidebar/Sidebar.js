@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import image from '../../Profile Photo.png'
-const Sidebar = () => {
+const Sidebar = ({ exerciseTime }) => {
    const [breakTime, setBreakTime] = useState();
    useEffect(() => {
       const breakTime = getStoredBreakTime();
@@ -58,7 +58,7 @@ const Sidebar = () => {
          <h1 className='text-2xl font-bold text-left'>Exercise Details</h1>
          <div className='text-yellow-400 flex justify-around my-5 bg-slate-600 h-18 py-5 rounded-xl'>
             <h1 className='text-xl font-semibold'><span>Exercise Time</span></h1>
-            <p className='text-orange-500 text-2xl'>{40} minutes</p>
+            <p className='text-orange-500 text-2xl'>{exerciseTime} minutes</p>
          </div>
          <div className='text-yellow-400 flex justify-around my-5 bg-slate-600 h-18 py-5 rounded-xl'>
             <h1 className='text-xl font-semibold'><span>Break Time</span></h1>

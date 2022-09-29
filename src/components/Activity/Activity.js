@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Activity = ({ activity }) => {
+const Activity = ({ activity, addExerciseTime }) => {
    const { name, picture, description, age, time } = activity;
    return (
       <div>
@@ -12,7 +12,7 @@ const Activity = ({ activity }) => {
                <h3 className='text-xl font-semibold'>For Age: <span className='text-orange-500'>{age}</span></h3>
                <h3 className='text-xl font-semibold'>Time required: <span className='text-orange-500'>{time} min.</span></h3>
                <div className="">
-                  <button className="text-white font-bold min-text-xl btn btn-info w-[100%]">Add To List</button>
+                  <button onClick={()=>addExerciseTime(activity)} className="text-white font-bold min-text-xl btn btn-info w-[100%]">Add To List</button>
                </div>
             </div>
          </div>

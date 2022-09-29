@@ -10,6 +10,13 @@ const Home = () => {
      .then(res => res.json())
      .then(data => setActivities(data))
    }, []);
+   const [exerciseTime, setExerciseTime] = useState(0);
+   const addExerciseTime = activity => {
+      const time = activity.time;
+      const currentExerciseTime = exerciseTime + time;
+      setExerciseTime(currentExerciseTime);
+   }
+
    return (
       <div className='sm:px-2 md:px-5 lg:px-20'>
          <Header></Header>
@@ -20,11 +27,14 @@ const Home = () => {
                   activities.map(activity => <Activity
                      key={activity.id}
                      activity={activity}
+                     addExerciseTime={addExerciseTime}
                   ></Activity>)
                }
             </div>
             <div>
-               <Sidebar></Sidebar>
+               <Sidebar
+                  exerciseTime={exerciseTime}
+               ></Sidebar>
             </div>
          </div>
       </div>
