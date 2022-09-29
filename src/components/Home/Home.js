@@ -19,7 +19,7 @@ const Home = () => {
    }
 
    return (
-      <div className='sm:px-2 md:px-5 lg:px-20'>
+      <div className='md:px-3 lg:px-2'>
          <Header></Header>
          <h1 className='text-left text-3xl text-white pl-8 py-5'>Select Today's Activity</h1>
          <div className='grid md:grid-cols-2 lg:grid-cols-4'>
