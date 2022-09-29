@@ -18,7 +18,7 @@ const Sidebar = ({ exerciseTime }) => {
       getStoredBreakTime();
    };
    const getStoredBreakTime = () => {
-      let breakTime;
+      let breakTime = 0;
       const storedBreakTime = localStorage.getItem('break-time');
       if (storedBreakTime) {
          breakTime = JSON.parse(storedBreakTime);
